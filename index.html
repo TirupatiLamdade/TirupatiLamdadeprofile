@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<!-- Page Title -->
 <title>Tirupati Lamdade — Flutter Developer & CS Engineer</title>
 
 <meta name="description" content="Portfolio of Tirupati Lamdade — Flutter Developer, UI/UX Designer, and Computer Science Engineer." />
@@ -24,8 +25,8 @@
           base:    '#0a0714',
           purple1: '#1e1240',
           purple2: '#5b21b6',
-          accent:  '#2563eb',
-          accent2: '#38bdf8',
+          accent:  '#8b5cf6',
+          accent2: '#c4b5fd',
           surface: '#150d28',
           line:    '#2c1f4a',
         },
@@ -42,12 +43,12 @@
 <style>
   html { scroll-behavior: smooth; }
   body { background-color: #0a0714; }
-  ::selection { background: rgba(37,99,235,0.35); color: #fff; }
+  ::selection { background: rgba(139,92,246,0.35); color: #fff; }
 
   .hero-bg {
     background:
-      radial-gradient(1100px 600px at 100% 0%, rgba(37,99,235,0.45), transparent 60%),
-      linear-gradient(115deg, #0a0714 0%, #1e1240 45%, #1e3a8a 100%);
+      radial-gradient(1100px 600px at 100% 0%, rgba(124,58,237,0.55), transparent 60%),
+      linear-gradient(115deg, #0a0714 0%, #1e1240 45%, #5b21b6 100%);
   }
 
   .glass {
@@ -57,17 +58,17 @@
   }
 
   .grad-text {
-    background: linear-gradient(90deg, #38bdf8, #60a5fa, #a78bfa);
+    background: linear-gradient(90deg, #a78bfa, #ede9fe);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
 
   .card-hover { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
-  .card-hover:hover { transform: translateY(-4px); border-color: rgba(56,189,248,0.5); box-shadow: 0 20px 60px -25px rgba(37,99,235,0.45); }
+  .card-hover:hover { transform: translateY(-4px); border-color: rgba(139,92,246,0.5); box-shadow: 0 20px 60px -25px rgba(139,92,246,0.45); }
 
   .photo-tilt {
-    transform: rotate(3deg);
+    transform: rotate(4deg);
     transition: transform .4s ease;
   }
   .photo-tilt:hover { transform: rotate(0deg); }
@@ -92,7 +93,7 @@
   }
 
   a:focus-visible, button:focus-visible {
-    outline: 2px solid #38bdf8;
+    outline: 2px solid #a78bfa;
     outline-offset: 2px;
     border-radius: 4px;
   }
@@ -107,26 +108,25 @@
 <header class="fixed top-0 inset-x-0 z-50 border-b border-line/70 glass">
   <nav class="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
     <a href="#top" class="flex items-center gap-2 group">
-      <span class="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-600 to-sky-400 flex items-center justify-center font-display font-bold text-base text-white">TL</span>
-      <span class="font-display font-semibold text-slate-100 tracking-tight hidden sm:block">Tirupati Lamdade<span class="text-sky-400">.</span></span>
+      <span class="w-9 h-9 rounded-lg bg-gradient-to-br from-accent to-accent2 flex items-center justify-center font-display font-bold text-base text-[#0a0714]">TL</span>
+      <span class="font-display font-semibold text-slate-100 tracking-tight hidden sm:block">Tirupati Lamdade<span class="text-accent2">.</span></span>
     </a>
 
     <ul class="hidden md:flex items-center gap-8 font-mono text-[13px] text-slate-400">
-      <li><a href="#about" class="hover:text-sky-400 transition-colors">01. About</a></li>
-      <li><a href="#services" class="hover:text-sky-400 transition-colors">02. Experience</a></li>
-      <li><a href="#skills" class="hover:text-sky-400 transition-colors">03. Skills</a></li>
-      <li><a href="#projects" class="hover:text-sky-400 transition-colors">04. Projects</a></li>
-      <li><a href="#education" class="hover:text-sky-400 transition-colors">05. Education</a></li>
-      <li><a href="#contact" class="hover:text-sky-400 transition-colors">06. Contact</a></li>
+      <li><a href="#about" class="hover:text-accent2 transition-colors">01. About</a></li>
+      <li><a href="#services" class="hover:text-accent2 transition-colors">02. Experience</a></li>
+      <li><a href="#skills" class="hover:text-accent2 transition-colors">03. Skills</a></li>
+      <li><a href="#projects" class="hover:text-accent2 transition-colors">04. Projects</a></li>
+      <li><a href="#contact" class="hover:text-accent2 transition-colors">05. Contact</a></li>
     </ul>
 
     <div class="hidden md:flex items-center gap-3">
       <a href="https://github.com/tirupatilamdade" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"
-         class="w-9 h-9 rounded-lg border border-line flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-all duration-300">
+         class="w-9 h-9 rounded-lg border border-line flex items-center justify-center text-slate-400 hover:text-base hover:bg-accent2 hover:border-accent2 transition-all duration-300">
         <i class="fa-brands fa-github"></i>
       </a>
       <a href="https://linkedin.com/in/tirupatilamdade" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"
-         class="w-9 h-9 rounded-lg border border-line flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-all duration-300">
+         class="w-9 h-9 rounded-lg border border-line flex items-center justify-center text-slate-400 hover:text-base hover:bg-accent hover:border-accent transition-all duration-300">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
     </div>
@@ -144,20 +144,19 @@
       </button>
     </div>
     <ul class="flex flex-col gap-1 p-5 font-mono text-sm text-slate-300">
-      <li><a data-nav href="#about" class="block py-3 px-2 rounded-lg hover:bg-surface hover:text-sky-400 transition-colors">01. About</a></li>
-      <li><a data-nav href="#services" class="block py-3 px-2 rounded-lg hover:bg-surface hover:text-sky-400 transition-colors">02. Experience</a></li>
-      <li><a data-nav href="#skills" class="block py-3 px-2 rounded-lg hover:bg-surface hover:text-sky-400 transition-colors">03. Skills</a></li>
-      <li><a data-nav href="#projects" class="block py-3 px-2 rounded-lg hover:bg-surface hover:text-sky-400 transition-colors">04. Projects</a></li>
-      <li><a data-nav href="#education" class="block py-3 px-2 rounded-lg hover:bg-surface hover:text-sky-400 transition-colors">05. Education</a></li>
-      <li><a data-nav href="#contact" class="block py-3 px-2 rounded-lg hover:bg-surface hover:text-sky-400 transition-colors">06. Contact</a></li>
+      <li><a data-nav href="#about" class="block py-3 px-2 rounded-lg hover:bg-surface hover:text-accent2 transition-colors">01. About</a></li>
+      <li><a data-nav href="#services" class="block py-3 px-2 rounded-lg hover:bg-surface hover:text-accent2 transition-colors">02. Experience</a></li>
+      <li><a data-nav href="#skills" class="block py-3 px-2 rounded-lg hover:bg-surface hover:text-accent2 transition-colors">03. Skills</a></li>
+      <li><a data-nav href="#projects" class="block py-3 px-2 rounded-lg hover:bg-surface hover:text-accent2 transition-colors">04. Projects</a></li>
+      <li><a data-nav href="#contact" class="block py-3 px-2 rounded-lg hover:bg-surface hover:text-accent2 transition-colors">05. Contact</a></li>
     </ul>
     <div class="flex items-center gap-3 px-5 pt-2">
       <a href="https://github.com/tirupatilamdade" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"
-         class="w-10 h-10 rounded-lg border border-line flex items-center justify-center text-slate-400 hover:text-sky-400 hover:border-sky-400 transition-colors">
+         class="w-10 h-10 rounded-lg border border-line flex items-center justify-center text-slate-400 hover:text-accent2 hover:border-accent2 transition-colors">
         <i class="fa-brands fa-github"></i>
       </a>
       <a href="https://linkedin.com/in/tirupatilamdade" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"
-         class="w-10 h-10 rounded-lg border border-line flex items-center justify-center text-slate-400 hover:text-blue-500 hover:border-blue-500 transition-colors">
+         class="w-10 h-10 rounded-lg border border-line flex items-center justify-center text-slate-400 hover:text-accent hover:border-accent transition-colors">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
     </div>
@@ -169,47 +168,50 @@
 <section id="top" class="hero-bg relative pt-40 pb-20 px-5 sm:px-8 overflow-hidden">
   <div class="max-w-6xl mx-auto grid lg:grid-cols-[1.15fr_0.85fr] gap-16 items-center relative">
     <div>
-      <p class="rise font-display font-semibold text-white text-lg sm:text-xl mb-4">Hi, I am Tirupati Lamdade</p>
+      <p class="rise font-display font-semibold text-white text-lg sm:text-xl mb-4">I am Tirupati Lamdade</p>
 
       <h1 class="rise rise-d1 font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.08]">
         <span class="grad-text">Flutter Developer</span><br/>
-        <span class="grad-text">& UI/UX Designer</span>
+        <span class="grad-text">UI/UX & Web Builder</span>
       </h1>
 
       <p class="rise rise-d2 mt-6 text-slate-300/90 text-base sm:text-lg max-w-xl leading-relaxed">
-        Passionate Computer Science student specializing in building high-performance mobile applications with Flutter & Dart, UI designs in Figma, and modern web applications[cite: 1].
+        I break down complex application requirements into intuitive cross-platform mobile experiences — built with Flutter, backed by clean UI architecture, and engineered for high performance.
       </p>
 
       <div class="rise rise-d3 mt-8 flex flex-wrap items-center gap-4">
-        <a href="TirupatiLamdade.pdf" download class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-line text-slate-100 font-semibold text-sm hover:border-sky-400/60 hover:bg-white/5 transition-all duration-300">
-          Download CV <i class="fa-solid fa-arrow-down text-xs"></i>
+        <!-- GOOGLE DRIVE RESUME LINK ADDED -->
+        <a href="https://drive.google.com/file/d/1ER06L68vGEHOaUe6haXkhX9Cdu-X8L4g/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-line text-slate-100 font-semibold text-sm hover:border-accent2/60 hover:bg-white/5 transition-all duration-300">
+          View / Download CV <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
         </a>
         <div class="flex items-center gap-3">
           <a href="https://linkedin.com/in/tirupatilamdade" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"
-             class="w-11 h-11 rounded-full border border-blue-500/40 flex items-center justify-center text-sky-400 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300">
+             class="w-11 h-11 rounded-full border border-accent/40 flex items-center justify-center text-accent2 hover:bg-accent hover:text-white hover:border-accent transition-all duration-300">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
           <a href="https://github.com/tirupatilamdade" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"
-             class="w-11 h-11 rounded-full border border-blue-500/40 flex items-center justify-center text-sky-400 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300">
+             class="w-11 h-11 rounded-full border border-accent/40 flex items-center justify-center text-accent2 hover:bg-accent hover:text-white hover:border-accent transition-all duration-300">
             <i class="fa-brands fa-github"></i>
           </a>
         </div>
       </div>
     </div>
 
-    <!-- Profile photo avatar -->
+    <!-- Profile photo -->
     <div class="rise rise-d2 relative flex justify-center lg:justify-end">
-      <div class="photo-tilt relative w-64 sm:w-72 aspect-[4/5] rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl bg-slate-900 flex flex-col items-center justify-center text-center p-6">
-        <div class="w-32 h-32 rounded-full bg-gradient-to-tr from-blue-600 to-sky-400 flex items-center justify-center text-4xl font-bold text-white mb-4">
+      <div class="photo-tilt relative w-64 sm:w-72 aspect-[4/5] rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl shadow-purple-900/50 bg-slate-900 flex flex-col items-center justify-center text-center p-6">
+        <div class="w-28 h-28 rounded-full bg-gradient-to-tr from-accent to-accent2 flex items-center justify-center text-3xl font-extrabold text-[#0a0714] mb-4 shadow-lg">
           TL
         </div>
-        <h3 class="text-xl font-bold text-white">Tirupati Lamdade</h3>
-        <p class="text-sm text-sky-300 mt-1">Nanded, Maharashtra[cite: 1]</p>
+        <h3 class="text-xl font-bold text-white font-display">Tirupati Lamdade</h3>
+        <p class="text-xs font-mono text-accent2 mt-1">Flutter Developer & CS Student</p>
+        <p class="text-xs text-slate-400 mt-2"><i class="fa-solid fa-location-dot text-accent mr-1"></i>Nanded, Maharashtra</p>
       </div>
+      <!-- floating dock -->
       <div class="hidden sm:flex absolute -bottom-5 -right-2 glass border border-line rounded-2xl px-4 py-3 items-center gap-3 shadow-lg">
-        <i class="fa-brands fa-flutter text-sky-400 text-lg"></i>
-        <i class="fa-brands fa-figma text-purple-400 text-lg"></i>
-        <i class="fa-solid fa-code text-blue-400 text-lg"></i>
+        <i class="fa-brands fa-flutter text-accent2 text-base"></i>
+        <i class="fa-brands fa-figma text-accent2 text-base"></i>
+        <i class="fa-solid fa-code text-accent2 text-base"></i>
       </div>
     </div>
   </div>
@@ -217,20 +219,20 @@
   <!-- Stats row -->
   <div class="max-w-6xl mx-auto mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 relative">
     <div class="rise flex items-end gap-2">
-      <span class="font-display font-extrabold text-4xl sm:text-5xl text-white">5+</span>
-      <span class="font-display font-medium text-sm text-slate-300 leading-tight pb-1">Projects<br/>Completed[cite: 1]</span>
+      <span class="font-display font-extrabold text-4xl sm:text-5xl text-white">85%</span>
+      <span class="font-display font-medium text-sm text-slate-300 leading-tight pb-1">SSC Academic<br/>Score</span>
     </div>
     <div class="rise rise-d1 flex items-end gap-2">
-      <span class="font-display font-extrabold text-4xl sm:text-5xl text-white">1</span>
-      <span class="font-display font-medium text-sm text-slate-300 leading-tight pb-1">Internship<br/>Completed[cite: 1]</span>
+      <span class="font-display font-extrabold text-4xl sm:text-5xl text-white">5+</span>
+      <span class="font-display font-medium text-sm text-slate-300 leading-tight pb-1">Mobile & Web<br/>Projects</span>
     </div>
     <div class="rise rise-d2 flex items-end gap-2">
-      <span class="font-display font-extrabold text-4xl sm:text-5xl text-white">8+</span>
-      <span class="font-display font-medium text-sm text-slate-300 leading-tight pb-1">Core<br/>Technologies[cite: 1]</span>
+      <span class="font-display font-extrabold text-4xl sm:text-5xl text-white">3</span>
+      <span class="font-display font-medium text-sm text-slate-300 leading-tight pb-1">Months Internship<br/>Experience</span>
     </div>
     <div class="rise rise-d3 flex items-end gap-2">
-      <span class="font-display font-extrabold text-4xl sm:text-5xl text-white">3+</span>
-      <span class="font-display font-medium text-sm text-slate-300 leading-tight pb-1">Years Learning<br/>& Building[cite: 1]</span>
+      <span class="font-display font-extrabold text-4xl sm:text-5xl text-white">100%</span>
+      <span class="font-display font-medium text-sm text-slate-300 leading-tight pb-1">Commitment to<br/>Quality Code</span>
     </div>
   </div>
 </section>
@@ -238,27 +240,27 @@
 <!-- ============ ABOUT ============ -->
 <section id="about" class="max-w-6xl mx-auto px-5 sm:px-8 py-24 border-t border-line/70">
   <div class="flex items-center gap-3 mb-10">
-    <span class="font-mono text-sky-400 text-sm">01.</span>
-    <h2 class="font-display font-semibold text-2xl sm:text-3xl text-slate-100">About Me</h2>
+    <span class="font-mono text-accent2 text-sm">01.</span>
+    <h2 class="font-display font-semibold text-2xl sm:text-3xl text-slate-100">About</h2>
     <span class="flex-1 h-px bg-line"></span>
   </div>
 
   <div class="grid md:grid-cols-5 gap-10">
     <div class="md:col-span-3 space-y-4 text-slate-400 leading-relaxed">
       <p>
-        I am currently pursuing a <span class="text-slate-200">Diploma in Computer Science Engineering</span> at Nanded Mathoshree University (2024–2027) with a strong foundation in software development, database management, and computer networks[cite: 1].
+        I am a Computer Science Diploma student at <span class="text-slate-200">Nanded Mathoshree University</span> (2024–2027) with a current aggregate of 74%. I hold a solid foundation in core computer science, software development, database systems, and computer networking.
       </p>
       <p>
-        During my 3-month internship as an <span class="text-slate-200">Intern Flutter Developer at Dream Webies Pvt Ltd</span>, I worked on real-world cross-platform mobile apps using Flutter and Dart, crafted UI layouts in Figma, and designed graphics using Canva[cite: 1].
+        During my 3-month internship as an <span class="text-slate-200">Intern Flutter Developer at Dream Webies Pvt Ltd</span>, I engineered cross-platform mobile apps using Flutter and Dart, translated design files into pixel-perfect Flutter widgets, and integrated Firebase backends.
       </p>
-      <p>Technologies I work with:</p>
+      <p>Technologies I work with regularly:</p>
       <ul class="grid grid-cols-2 gap-x-4 gap-y-2 font-mono text-sm text-slate-300 pt-1">
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Flutter & Dart[cite: 1]</li>
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Figma (UI/UX)[cite: 1]</li>
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Firebase (Basic)[cite: 1]</li>
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Canva Graphics[cite: 1]</li>
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Problem Solving[cite: 1]</li>
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Communication[cite: 1]</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-accent2 text-xs"></i>Flutter & Dart</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-accent2 text-xs"></i>Figma UI Development</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-accent2 text-xs"></i>Firebase (Basic)</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-accent2 text-xs"></i>Canva Design</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-accent2 text-xs"></i>HTML5 & CSS3</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-accent2 text-xs"></i>Problem Solving</li>
       </ul>
     </div>
 
@@ -266,24 +268,27 @@
       <div class="rounded-2xl border border-line bg-surface p-6 card-hover">
         <div class="flex items-center justify-between mb-5">
           <span class="font-mono text-xs text-slate-500">profile.json</span>
-          <i class="fa-solid fa-mobile-screen-button text-sky-400"></i>
+          <i class="fa-solid fa-mobile-screen-button text-accent2"></i>
         </div>
         <dl class="space-y-3 text-sm font-mono">
           <div class="flex justify-between border-b border-line/70 pb-2">
-            <dt class="text-slate-500">name</dt><dd class="text-slate-200">Tirupati Lamdade[cite: 1]</dd>
+            <dt class="text-slate-500">name</dt><dd class="text-slate-200">Tirupati Lamdade</dd>
           </div>
           <div class="flex justify-between border-b border-line/70 pb-2">
-            <dt class="text-slate-500">role</dt><dd class="text-slate-200">Flutter Developer[cite: 1]</dd>
+            <dt class="text-slate-500">role</dt><dd class="text-slate-200">Flutter Developer</dd>
           </div>
           <div class="flex justify-between border-b border-line/70 pb-2">
-            <dt class="text-slate-500">education</dt><dd class="text-slate-200">CS Diploma (74%)[cite: 1]</dd>
+            <dt class="text-slate-500">education</dt><dd class="text-slate-200">CS Diploma (74%)</dd>
           </div>
           <div class="flex justify-between border-b border-line/70 pb-2">
-            <dt class="text-slate-500">location</dt><dd class="text-slate-200">Nanded, Maharastra[cite: 1]</dd>
+            <dt class="text-slate-500">ssc_score</dt><dd class="text-slate-200">85% Board Score</dd>
+          </div>
+          <div class="flex justify-between border-b border-line/70 pb-2">
+            <dt class="text-slate-500">location</dt><dd class="text-slate-200">Nanded, MH</dd>
           </div>
           <div class="flex justify-between">
             <dt class="text-slate-500">status</dt>
-            <dd class="text-sky-400 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse"></span>Open for roles</dd>
+            <dd class="text-accent2 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent2 animate-pulse"></span>Open to opportunities</dd>
           </div>
         </dl>
       </div>
@@ -291,34 +296,48 @@
   </div>
 </section>
 
-<!-- ============ EXPERIENCE ============ -->
+<!-- ============ WORK EXPERIENCE / SERVICES ============ -->
 <section id="services" class="hero-bg py-24 px-5 sm:px-8 border-t border-line/70">
   <div class="max-w-5xl mx-auto">
-    <div class="flex items-center gap-3 mb-10">
-      <span class="font-mono text-sky-400 text-sm">02.</span>
-      <h2 class="font-display font-semibold text-2xl sm:text-3xl text-slate-100">Work Experience</h2>
-      <span class="flex-1 h-px bg-line"></span>
-    </div>
+    <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-center mb-4">
+      <span class="text-white">Professional Experience & </span><span class="grad-text">Capabilities</span>
+    </h2>
+    <p class="text-center text-slate-300/80 max-w-2xl mx-auto mb-14">
+      Combining industry internship experience at Dream Webies Pvt Ltd with hands-on computer science engineering expertise.
+    </p>
 
-    <div class="rounded-2xl border border-line bg-surface p-8 card-hover">
-      <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-        <div>
-          <h3 class="font-display font-bold text-xl text-white">Intern Flutter Developer[cite: 1]</h3>
-          <p class="text-sky-400 text-sm font-semibold">Dream Webies Pvt Ltd[cite: 1]</p>
+    <div>
+      <div class="num-list-item flex items-start gap-6 sm:gap-10 py-8">
+        <span class="font-display font-extrabold text-3xl text-white/90 w-8">01</span>
+        <div class="flex-1">
+          <h3 class="font-display font-semibold text-lg text-white mb-1.5">Intern Flutter Developer — Dream Webies Pvt Ltd (2026)</h3>
+          <p class="text-slate-400 text-sm max-w-2xl leading-relaxed">
+            Engineered cross-platform mobile app components using Flutter & Dart. Collaborated with core engineering teams, implemented responsive UI designs, and applied best practices in software architecture.
+          </p>
         </div>
-        <span class="tag px-3 py-1 rounded-full border border-line text-slate-400">2026 (3 Months Internship)[cite: 1]</span>
+        <i class="fa-solid fa-arrow-up-right text-accent2 mt-1"></i>
       </div>
-      <ul class="space-y-2.5 text-slate-400 text-sm leading-relaxed mb-6">
-        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-sky-400 mt-1 text-xs"></i> Developed cross-platform mobile application using Flutter and Dart[cite: 1].</li>
-        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-sky-400 mt-1 text-xs"></i> Designed hands-on UI layouts in Figma and created visual assets in Canva[cite: 1].</li>
-        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-sky-400 mt-1 text-xs"></i> Collaborated with team members on real-world projects following software development best practices[cite: 1].</li>
-      </ul>
-      <div class="flex flex-wrap gap-2">
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-sky-400 border border-sky-400/20">Flutter[cite: 1]</span>
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-sky-400 border border-sky-400/20">Dart[cite: 1]</span>
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-purple-300 border border-line">Figma[cite: 1]</span>
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-purple-300 border border-line">Canva[cite: 1]</span>
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-slate-300 border border-line">Firebase[cite: 1]</span>
+
+      <div class="num-list-item flex items-start gap-6 sm:gap-10 py-8">
+        <span class="font-display font-extrabold text-3xl text-white/90 w-8">02</span>
+        <div class="flex-1">
+          <h3 class="font-display font-semibold text-lg text-white mb-1.5">UI/UX & Visual Asset Design</h3>
+          <p class="text-slate-400 text-sm max-w-2xl leading-relaxed">
+            Designed modern interface layouts and interactive prototypes in Figma, supplemented by digital creative assets and graphics designed in Canva.
+          </p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right text-accent2 mt-1"></i>
+      </div>
+
+      <div class="num-list-item flex items-start gap-6 sm:gap-10 py-8">
+        <span class="font-display font-extrabold text-3xl text-white/90 w-8">03</span>
+        <div class="flex-1">
+          <h3 class="font-display font-semibold text-lg text-white mb-1.5">Web Systems & Backend Integration</h3>
+          <p class="text-slate-400 text-sm max-w-2xl leading-relaxed">
+            Built structured web management systems, implemented relational data handling, and integrated Firebase services for cloud authentication and real-time synchronization.
+          </p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right text-accent2 mt-1"></i>
       </div>
     </div>
   </div>
@@ -327,48 +346,51 @@
 <!-- ============ SKILLS ============ -->
 <section id="skills" class="max-w-6xl mx-auto px-5 sm:px-8 py-24 border-t border-line/70">
   <div class="flex items-center gap-3 mb-12">
-    <span class="font-mono text-sky-400 text-sm">03.</span>
+    <span class="font-mono text-accent2 text-sm">03.</span>
     <h2 class="font-display font-semibold text-2xl sm:text-3xl text-slate-100">Skills Matrix</h2>
     <span class="flex-1 h-px bg-line"></span>
   </div>
 
   <div class="grid md:grid-cols-3 gap-6">
     <div class="rounded-2xl border border-line bg-surface p-6 card-hover">
-      <div class="w-11 h-11 rounded-xl bg-blue-600/10 border border-blue-500/30 flex items-center justify-center mb-5">
-        <i class="fa-brands fa-flutter text-sky-400 text-xl"></i>
+      <div class="w-11 h-11 rounded-xl bg-accent/10 border border-accent/30 flex items-center justify-center mb-5">
+        <i class="fa-solid fa-mobile-screen-button text-accent2"></i>
       </div>
-      <h3 class="font-display font-semibold text-slate-100 mb-1">Mobile & Backend</h3>
-      <p class="text-xs text-slate-500 mb-5">App Development Technologies[cite: 1]</p>
+      <h3 class="font-display font-semibold text-slate-100 mb-1">Mobile Technologies</h3>
+      <p class="text-xs text-slate-500 mb-5">Cross-platform app development</p>
       <ul class="space-y-2.5 text-sm">
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Flutter[cite: 1]</li>
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Dart[cite: 1]</li>
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Firebase (Basic)[cite: 1]</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-slate-600 text-xs"></i>Flutter Framework</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-slate-600 text-xs"></i>Dart Programming</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-slate-600 text-xs"></i>Firebase (Basic)</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-slate-600 text-xs"></i>State & Widget Management</li>
       </ul>
     </div>
 
     <div class="rounded-2xl border border-line bg-surface p-6 card-hover">
-      <div class="w-11 h-11 rounded-xl bg-blue-600/10 border border-blue-500/30 flex items-center justify-center mb-5">
-        <i class="fa-brands fa-figma text-sky-400 text-xl"></i>
+      <div class="w-11 h-11 rounded-xl bg-accent/10 border border-accent/30 flex items-center justify-center mb-5">
+        <i class="fa-solid fa-pen-ruler text-accent2"></i>
       </div>
-      <h3 class="font-display font-semibold text-slate-100 mb-1">UI/UX & Design</h3>
-      <p class="text-xs text-slate-500 mb-5">Visual & Layout Crafting[cite: 1]</p>
+      <h3 class="font-display font-semibold text-slate-100 mb-1">UI/UX & Graphics</h3>
+      <p class="text-xs text-slate-500 mb-5">Prototyping & design systems</p>
       <ul class="space-y-2.5 text-sm">
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>UI Development (Figma)[cite: 1]</li>
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Canva Graphics[cite: 1]</li>
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Responsive Design</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-slate-600 text-xs"></i>Figma Design</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-slate-600 text-xs"></i>Canva Graphics</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-slate-600 text-xs"></i>Responsive Web Layouts</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-slate-600 text-xs"></i>User Experience Prototyping</li>
       </ul>
     </div>
 
     <div class="rounded-2xl border border-line bg-surface p-6 card-hover">
-      <div class="w-11 h-11 rounded-xl bg-blue-600/10 border border-blue-500/30 flex items-center justify-center mb-5">
-        <i class="fa-solid fa-lightbulb text-sky-400 text-xl"></i>
+      <div class="w-11 h-11 rounded-xl bg-accent/10 border border-accent/30 flex items-center justify-center mb-5">
+        <i class="fa-solid fa-code text-accent2"></i>
       </div>
-      <h3 class="font-display font-semibold text-slate-100 mb-1">Professional Skills</h3>
-      <p class="text-xs text-slate-500 mb-5">Core Strengths & Communication[cite: 1]</p>
+      <h3 class="font-display font-semibold text-slate-100 mb-1">Core CS & Soft Skills</h3>
+      <p class="text-xs text-slate-500 mb-5">Foundational engineering & communication</p>
       <ul class="space-y-2.5 text-sm">
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Problem Solving[cite: 1]</li>
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Communication Skills[cite: 1]</li>
-        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-sky-400 text-xs"></i>Teamwork & Collaboration[cite: 1]</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-slate-600 text-xs"></i>Problem Solving</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-slate-600 text-xs"></i>Communication Skills</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-slate-600 text-xs"></i>Team Collaboration</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-slate-600 text-xs"></i>HTML / CSS / Web Dev</li>
       </ul>
     </div>
   </div>
@@ -377,8 +399,8 @@
 <!-- ============ PROJECTS ============ -->
 <section id="projects" class="max-w-6xl mx-auto px-5 sm:px-8 py-24 border-t border-line/70">
   <div class="flex items-center gap-3 mb-12">
-    <span class="font-mono text-sky-400 text-sm">04.</span>
-    <h2 class="font-display font-semibold text-2xl sm:text-3xl text-slate-100">Featured Projects[cite: 1]</h2>
+    <span class="font-mono text-accent2 text-sm">04.</span>
+    <h2 class="font-display font-semibold text-2xl sm:text-3xl text-slate-100">Featured Projects</h2>
     <span class="flex-1 h-px bg-line"></span>
   </div>
 
@@ -386,23 +408,23 @@
     <!-- Project 1 -->
     <article class="rounded-2xl border border-line bg-surface p-7 card-hover flex flex-col">
       <div class="flex items-start justify-between mb-4">
-        <div class="w-12 h-12 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center">
-          <i class="fa-solid fa-book text-sky-400 text-xl"></i>
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-accent/30 to-accent2/10 border border-accent/30 flex items-center justify-center">
+          <i class="fa-solid fa-book-bookmark text-accent2"></i>
         </div>
-        <span class="tag px-2.5 py-1 rounded-full border border-line text-sky-400">Production Level[cite: 1]</span>
+        <span class="tag px-2.5 py-1 rounded-full border border-line text-slate-400">Production App</span>
       </div>
-      <h3 class="font-display font-semibold text-lg text-slate-100 mb-2">Smart KhataBook App[cite: 1]</h3>
+      <h3 class="font-display font-semibold text-lg text-slate-100 mb-2">Smart KhataBook App</h3>
       <p class="text-sm text-slate-400 leading-relaxed mb-5 flex-1">
-        Production-level digital ledger and account management system built for business transaction tracking[cite: 1].
+        A production-grade mobile accounting and ledger application engineered with Flutter and Dart for digital record-keeping and business transaction tracking.
       </p>
       <div class="flex flex-wrap gap-2 mb-6">
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-sky-400 border border-sky-400/20">Flutter[cite: 1]</span>
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-sky-400 border border-sky-400/20">Dart[cite: 1]</span>
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-slate-300 border border-line">Firebase[cite: 1]</span>
+        <span class="tag px-2.5 py-1 rounded-md bg-base text-accent2 border border-accent/20">Flutter</span>
+        <span class="tag px-2.5 py-1 rounded-md bg-base text-accent2 border border-accent/20">Dart</span>
+        <span class="tag px-2.5 py-1 rounded-md bg-base text-slate-300 border border-line">Production Level</span>
       </div>
       <div class="flex items-center gap-3 pt-4 border-t border-line/70">
         <a href="https://github.com/tirupatilamdade" target="_blank" rel="noopener noreferrer"
-           class="flex-1 inline-flex items-center justify-center gap-2 py-2.5 rounded-lg border border-line text-sm text-slate-200 hover:border-sky-400 hover:text-sky-400 transition-colors duration-300">
+           class="flex-1 inline-flex items-center justify-center gap-2 py-2.5 rounded-lg border border-line text-sm text-slate-200 hover:border-accent2/50 hover:text-accent2 transition-colors duration-300">
           <i class="fa-brands fa-github"></i> Repository
         </a>
       </div>
@@ -411,23 +433,23 @@
     <!-- Project 2 -->
     <article class="rounded-2xl border border-line bg-surface p-7 card-hover flex flex-col">
       <div class="flex items-start justify-between mb-4">
-        <div class="w-12 h-12 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center">
-          <i class="fa-brands fa-youtube text-red-500 text-xl"></i>
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-accent/30 to-accent2/10 border border-accent/30 flex items-center justify-center">
+          <i class="fa-brands fa-youtube text-red-400"></i>
         </div>
-        <span class="tag px-2.5 py-1 rounded-full border border-line text-slate-400">Mobile App[cite: 1]</span>
+        <span class="tag px-2.5 py-1 rounded-full border border-line text-slate-400">Mobile App</span>
       </div>
-      <h3 class="font-display font-semibold text-lg text-slate-100 mb-2">YouTube Clone (Flutter)[cite: 1]</h3>
+      <h3 class="font-display font-semibold text-lg text-slate-100 mb-2">YouTube Clone (Flutter)</h3>
       <p class="text-sm text-slate-400 leading-relaxed mb-5 flex-1">
-        Feature-rich YouTube application clone designed with modern responsive UI using Flutter and Dart[cite: 1].
+        A feature-packed video player and content-browsing app clone built using Flutter and Dart, focused on UI replication and fluid video layouts.
       </p>
       <div class="flex flex-wrap gap-2 mb-6">
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-sky-400 border border-sky-400/20">Flutter[cite: 1]</span>
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-sky-400 border border-sky-400/20">Dart[cite: 1]</span>
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-slate-300 border border-line">UI Design[cite: 1]</span>
+        <span class="tag px-2.5 py-1 rounded-md bg-base text-accent2 border border-accent/20">Flutter</span>
+        <span class="tag px-2.5 py-1 rounded-md bg-base text-accent2 border border-accent/20">Dart</span>
+        <span class="tag px-2.5 py-1 rounded-md bg-base text-slate-300 border border-line">UI Replication</span>
       </div>
       <div class="flex items-center gap-3 pt-4 border-t border-line/70">
         <a href="https://github.com/tirupatilamdade" target="_blank" rel="noopener noreferrer"
-           class="flex-1 inline-flex items-center justify-center gap-2 py-2.5 rounded-lg border border-line text-sm text-slate-200 hover:border-sky-400 hover:text-sky-400 transition-colors duration-300">
+           class="flex-1 inline-flex items-center justify-center gap-2 py-2.5 rounded-lg border border-line text-sm text-slate-200 hover:border-accent2/50 hover:text-accent2 transition-colors duration-300">
           <i class="fa-brands fa-github"></i> Repository
         </a>
       </div>
@@ -436,23 +458,23 @@
     <!-- Project 3 -->
     <article class="rounded-2xl border border-line bg-surface p-7 card-hover flex flex-col">
       <div class="flex items-start justify-between mb-4">
-        <div class="w-12 h-12 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center">
-          <i class="fa-solid fa-clipboard-user text-sky-400 text-xl"></i>
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-accent/30 to-accent2/10 border border-accent/30 flex items-center justify-center">
+          <i class="fa-solid fa-clipboard-user text-accent2"></i>
         </div>
-        <span class="tag px-2.5 py-1 rounded-full border border-line text-slate-400">Website[cite: 1]</span>
+        <span class="tag px-2.5 py-1 rounded-full border border-line text-slate-400">Web App</span>
       </div>
-      <h3 class="font-display font-semibold text-lg text-slate-100 mb-2">Attendance Management System[cite: 1]</h3>
+      <h3 class="font-display font-semibold text-lg text-slate-100 mb-2">Attendance Management System</h3>
       <p class="text-sm text-slate-400 leading-relaxed mb-5 flex-1">
-        Web platform built to track and manage attendance records efficiently[cite: 1].
+        A web application designed for educational and organizational tracking of daily attendance metrics with a clean administrative portal.
       </p>
       <div class="flex flex-wrap gap-2 mb-6">
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-sky-400 border border-sky-400/20">HTML/CSS</span>
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-sky-400 border border-sky-400/20">JavaScript</span>
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-slate-300 border border-line">Web</span>
+        <span class="tag px-2.5 py-1 rounded-md bg-base text-accent2 border border-accent/20">HTML/CSS</span>
+        <span class="tag px-2.5 py-1 rounded-md bg-base text-accent2 border border-accent/20">JavaScript</span>
+        <span class="tag px-2.5 py-1 rounded-md bg-base text-slate-300 border border-line">Web Portal</span>
       </div>
       <div class="flex items-center gap-3 pt-4 border-t border-line/70">
         <a href="https://github.com/tirupatilamdade" target="_blank" rel="noopener noreferrer"
-           class="flex-1 inline-flex items-center justify-center gap-2 py-2.5 rounded-lg border border-line text-sm text-slate-200 hover:border-sky-400 hover:text-sky-400 transition-colors duration-300">
+           class="flex-1 inline-flex items-center justify-center gap-2 py-2.5 rounded-lg border border-line text-sm text-slate-200 hover:border-accent2/50 hover:text-accent2 transition-colors duration-300">
           <i class="fa-brands fa-github"></i> Repository
         </a>
       </div>
@@ -461,23 +483,23 @@
     <!-- Project 4 & 5 -->
     <article class="rounded-2xl border border-line bg-surface p-7 card-hover flex flex-col">
       <div class="flex items-start justify-between mb-4">
-        <div class="w-12 h-12 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center">
-          <i class="fa-solid fa-chart-line text-sky-400 text-xl"></i>
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-accent/30 to-accent2/10 border border-accent/30 flex items-center justify-center">
+          <i class="fa-solid fa-chart-line text-accent2"></i>
         </div>
-        <span class="tag px-2.5 py-1 rounded-full border border-line text-slate-400">Web Portals[cite: 1]</span>
+        <span class="tag px-2.5 py-1 rounded-full border border-line text-slate-400">Web Systems</span>
       </div>
-      <h3 class="font-display font-semibold text-lg text-slate-100 mb-2">Daily Report & Feedback Websites[cite: 1]</h3>
+      <h3 class="font-display font-semibold text-lg text-slate-100 mb-2">Daily Report & Feedback Websites</h3>
       <p class="text-sm text-slate-400 leading-relaxed mb-5 flex-1">
-        Web systems developed for daily work reporting and user feedback management[cite: 1].
+        Web platforms designed for streamlined daily operational reporting and centralized user feedback management.
       </p>
       <div class="flex flex-wrap gap-2 mb-6">
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-sky-400 border border-sky-400/20">Web Dev</span>
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-slate-300 border border-line">Feedback</span>
-        <span class="tag px-2.5 py-1 rounded-md bg-base text-slate-300 border border-line">Reports[cite: 1]</span>
+        <span class="tag px-2.5 py-1 rounded-md bg-base text-accent2 border border-accent/20">Web Systems</span>
+        <span class="tag px-2.5 py-1 rounded-md bg-base text-accent2 border border-accent/20">UI Design</span>
+        <span class="tag px-2.5 py-1 rounded-md bg-base text-slate-300 border border-line">Feedback DB</span>
       </div>
       <div class="flex items-center gap-3 pt-4 border-t border-line/70">
         <a href="https://github.com/tirupatilamdade" target="_blank" rel="noopener noreferrer"
-           class="flex-1 inline-flex items-center justify-center gap-2 py-2.5 rounded-lg border border-line text-sm text-slate-200 hover:border-sky-400 hover:text-sky-400 transition-colors duration-300">
+           class="flex-1 inline-flex items-center justify-center gap-2 py-2.5 rounded-lg border border-line text-sm text-slate-200 hover:border-accent2/50 hover:text-accent2 transition-colors duration-300">
           <i class="fa-brands fa-github"></i> Repository
         </a>
       </div>
@@ -485,68 +507,40 @@
   </div>
 </section>
 
-<!-- ============ EDUCATION ============ -->
-<section id="education" class="max-w-6xl mx-auto px-5 sm:px-8 py-24 border-t border-line/70">
-  <div class="flex items-center gap-3 mb-12">
-    <span class="font-mono text-sky-400 text-sm">05.</span>
-    <h2 class="font-display font-semibold text-2xl sm:text-3xl text-slate-100">Education[cite: 1]</h2>
-    <span class="flex-1 h-px bg-line"></span>
-  </div>
-
-  <div class="space-y-6">
-    <div class="rounded-2xl border border-line bg-surface p-6 card-hover">
-      <div class="flex flex-wrap items-center justify-between gap-2">
-        <h3 class="font-display font-bold text-lg text-white">Diploma in Computer Science Engineering[cite: 1]</h3>
-        <span class="tag px-3 py-1 rounded-full border border-line text-sky-400">74%[cite: 1]</span>
-      </div>
-      <p class="text-slate-400 text-sm mt-1">Nanded Mathoshree University | 2024 - 2027[cite: 1]</p>
-      <p class="text-slate-500 text-xs mt-3">Built strong foundation in programming, software development, database management, and computer networks[cite: 1].</p>
-    </div>
-
-    <div class="rounded-2xl border border-line bg-surface p-6 card-hover">
-      <div class="flex flex-wrap items-center justify-between gap-2">
-        <h3 class="font-display font-bold text-lg text-white">Secondary School Certificate (SSC)[cite: 1]</h3>
-        <span class="tag px-3 py-1 rounded-full border border-line text-sky-400">85%[cite: 1]</span>
-      </div>
-      <p class="text-slate-400 text-sm mt-1">Maharashtra State Board | 2023 - 2024[cite: 1]</p>
-    </div>
-  </div>
-</section>
-
 <!-- ============ CONTACT ============ -->
 <section id="contact" class="max-w-6xl mx-auto px-5 sm:px-8 py-24 border-t border-line/70">
   <div class="flex items-center gap-3 mb-12">
-    <span class="font-mono text-sky-400 text-sm">06.</span>
+    <span class="font-mono text-accent2 text-sm">05.</span>
     <h2 class="font-display font-semibold text-2xl sm:text-3xl text-slate-100">Get In Touch</h2>
     <span class="flex-1 h-px bg-line"></span>
   </div>
 
   <div class="hero-bg rounded-2xl border border-line p-10 sm:p-14 text-center relative overflow-hidden">
-    <p class="font-mono text-sky-400 text-xs mb-4">// Open to internships, projects & full-time roles</p>
-    <h3 class="font-display font-bold text-2xl sm:text-3xl text-white max-w-2xl mx-auto mb-4">
-      Have an app idea or project? Let's talk!
+    <p class="font-mono text-accent2 text-xs mb-2">// open to internships, projects & entry-level developer roles</p>
+    <h3 class="font-display font-bold text-2xl sm:text-3xl text-white max-w-2xl mx-auto mb-3">
+      Have an app idea? Let's build it for mobile — the right way.
     </h3>
-    <p class="text-slate-300/80 max-w-xl mx-auto mb-2">
-      Nanded, Maharashtra, India[cite: 1]
+    <p class="text-slate-300/80 max-w-xl mx-auto mb-1">
+      Nanded, Maharashtra, India
     </p>
     <p class="text-slate-300/80 max-w-xl mx-auto mb-8 font-mono text-sm">
-      Phone: +91 9579680911[cite: 1]
+      Phone: +91 9579680911
     </p>
 
     <div class="flex flex-wrap items-center justify-center gap-4 mb-8">
       <a href="mailto:tirupatilamdade162@gmail.com"
-         class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-sky-400 text-white font-semibold text-sm hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
-        <i class="fa-solid fa-envelope"></i> tirupatilamdade162@gmail.com[cite: 1]
+         class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-accent to-accent2 text-[#0a0714] font-semibold text-sm hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
+        <i class="fa-solid fa-envelope"></i> tirupatilamdade162@gmail.com
       </a>
     </div>
 
     <div class="flex items-center justify-center gap-3">
       <a href="https://github.com/tirupatilamdade" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"
-         class="w-11 h-11 rounded-full border border-line flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600 hover:border-blue-600 hover:-translate-y-1 transition-all duration-300">
+         class="w-11 h-11 rounded-full border border-line flex items-center justify-center text-slate-400 hover:text-base hover:bg-accent2 hover:border-accent2 hover:-translate-y-1 transition-all duration-300">
         <i class="fa-brands fa-github"></i>
       </a>
       <a href="https://linkedin.com/in/tirupatilamdade" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"
-         class="w-11 h-11 rounded-full border border-line flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600 hover:border-blue-600 hover:-translate-y-1 transition-all duration-300">
+         class="w-11 h-11 rounded-full border border-line flex items-center justify-center text-slate-400 hover:text-base hover:bg-accent hover:border-accent hover:-translate-y-1 transition-all duration-300">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
     </div>
@@ -556,8 +550,8 @@
 <!-- ============ FOOTER ============ -->
 <footer class="border-t border-line/70 py-8 px-5 sm:px-8">
   <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 font-mono">
-    <p>&copy; <span id="year"></span> Tirupati Lamdade. All rights reserved.[cite: 1]</p>
-    <p class="flex items-center gap-1.5">Built with <i class="fa-solid fa-heart text-sky-400 text-[10px]"></i> for Mobile & Web Development.</p>
+    <p>&copy; <span id="year"></span> Tirupati Lamdade. All rights reserved.</p>
+    <p class="flex items-center gap-1.5">Designed & built with <i class="fa-solid fa-heart text-accent2 text-[10px]"></i> and Flutter-grade attention to detail.</p>
   </div>
 </footer>
 
