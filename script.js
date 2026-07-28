@@ -1,17 +1,16 @@
-
-// 1. माऊसचा प्रकाश प्रभाव (Spotlight Glow)
+// 1. Mouse Cursor Spotlight Effect
 const glow = document.getElementById('cursorGlow');
 document.addEventListener('mousemove', (e) => {
     glow.style.left = e.clientX + 'px';
     glow.style.top = e.clientY + 'px';
 });
 
-// 2. टाइपरायटर प्रभाव (Typewriter Effect)
+// 2. Typewriter Animation Effect
 const roles = [
-    "फ्लटर डेव्हलपर",
-    "UI/UX डिझायनर",
-    "संगणक अभियंता",
-    "प्रॉब्लेम सॉल्व्हर"
+    "Flutter Developer",
+    "UI/UX Designer",
+    "Software Engineer",
+    "Problem Solver"
 ];
 let roleIndex = 0;
 let charIndex = 0;
@@ -32,7 +31,7 @@ function typeEffect() {
     let speed = isDeleting ? 50 : 100;
 
     if (!isDeleting && charIndex === currentRole.length) {
-        speed = 2000;
+        speed = 2000; // Pause at full phrase
         isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
@@ -45,7 +44,7 @@ function typeEffect() {
 
 document.addEventListener("DOMContentLoaded", typeEffect);
 
-// 3. स्क्रोलनुसार नेव्हिगेशन लिंक ॲक्टिव्ह करणे
+// 3. Active Navigation Link on Scroll
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 
@@ -53,7 +52,7 @@ window.addEventListener("scroll", () => {
     let current = "";
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 150) {
+        if (window.pageYOffset >= sectionTop - 150) {
             current = section.getAttribute("id");
         }
     });
